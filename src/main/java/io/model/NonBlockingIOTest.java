@@ -33,7 +33,7 @@ public class NonBlockingIOTest {
                             EchoClient client  = new EchoClient();
                             Map<String,Object> map;
                             map = client.buildClient(clientArgs);
-                            if(map.get("code")==0){
+                            if(Integer.parseInt(map.get("code").toString())==0){
                                 System.out.println("Client-"+Thread.currentThread().getName()+"线程结束");
                                 if(map.get("stdIn")!=null){
                                     listStd.add((BufferedReader) map.get("stdIn"));

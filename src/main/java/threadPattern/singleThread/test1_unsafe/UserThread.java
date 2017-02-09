@@ -1,4 +1,4 @@
-package threadPattern.singleThread.test1;
+package threadPattern.singleThread.test1_unsafe;
 
 public class UserThread extends Thread {
     private final Gate gate;

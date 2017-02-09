@@ -1,4 +1,4 @@
-package threadPattern.singleThread.test1;
+package threadPattern.singleThread.test1_unsafe;
 
 public class Gate {
     private int counter = 0;

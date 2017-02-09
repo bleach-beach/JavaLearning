@@ -1,4 +1,4 @@
-package threadPattern.singleThread.test1;
+package threadPattern.singleThread.test1_unsafe;
 
 /**
  * Created by yanghao-012 on 2016/11/15.

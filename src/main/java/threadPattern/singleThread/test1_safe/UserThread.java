@@ -1,4 +1,4 @@
-package threadPattern.singleThread.test2;
+package threadPattern.singleThread.test1_safe;
 
 public class UserThread extends Thread {
     private final Gate gate;
