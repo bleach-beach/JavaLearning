@@ -1,4 +1,4 @@
-package io.model;
+package io.model; 
 
 import java.io.BufferedReader;
 import java.io.IOException;
