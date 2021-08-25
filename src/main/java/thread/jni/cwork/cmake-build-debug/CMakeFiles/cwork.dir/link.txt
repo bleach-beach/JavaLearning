@@ -1,0 +1,1 @@
+/bin/c++  -g   CMakeFiles/cwork.dir/main.cpp.o CMakeFiles/cwork.dir/MyThread.c.o CMakeFiles/cwork.dir/SimpleThread.cpp.o  -o cwork -lpthread 

@@ -1,0 +1,7 @@
+﻿javac xx.java  (最好去掉包名)
+javah.xx
+
+
+gcc -fPIC -I /usr/lib/jvm/java-1.8.0-openjdk/include -I /usr/lib/jvm/java-1.8.0-openjdk/include/linux -shared -o libMyThreadJniNative.so MyThread.c
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/mnt/hgfs/share

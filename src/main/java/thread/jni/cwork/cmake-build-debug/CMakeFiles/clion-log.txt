@@ -1,0 +1,4 @@
+/mnt/hgfs/share/software/clion-2019.1.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/hgfs/share/workspace/cwork
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/hgfs/share/workspace/cwork/cmake-build-debug

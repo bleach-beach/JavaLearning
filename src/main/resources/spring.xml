@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    1、哪些类需要我来关联
+    2、怎么告诉我这些类(写bean)
+    3、怎么维护依赖关系（settr、constr）
+    4、怎么体现setter或者constr
+ -->
+<beans default="byType">
+
+    <bean id="dao" class="ioc.dao.UserDaoImpl"></bean>
+
+    <bean id="service2" class="ioc.service.UserServiceImpl2">
+
+        <constructor-arg name="dao" ref="dao"></constructor-arg>
+       <!-- <property name = "dao" ref="dao"></property>-->
+    </bean>
+
+    <!--
+        byType时多个导致异常
+    -->
+    <!--<bean id="dao1" class="ioc.dao.UserDaoImpl1"></bean>-->
+    <bean id="test" class="ioc.dao.TestDaoImpl"></bean>
+    <!--<bean id="dao1" class="ioc.dao.UserDaoImpl1"></bean>-->
+    <bean id="service" class="ioc.service.UserServiceImpl">
+    </bean>
+
+    <bean id="service3" class="ioc.service.UserServiceImpl3">
+         <property name = "dao" ref="dao"></property>
+    </bean>
+
+</beans>

@@ -1,0 +1,52 @@
+http://mirror.hust.edu.cn/gnu/glibc/
+首先检查自己的linux有没有java环境
+通过java、和javac两个命令看看可以用不
+
+如果没有则检查一下yum当中有哪些JDK可以提供安装
+yum search java | grep -i --color jdk
+
+然后选择一个你的版本安装，以jdk8为例
+
+yum install -y java-1.8.0-openjdk.x86_64 java-1.8.0-openjdk-devel.x86_64  
+
+安装gcc?用来编译C程序    yum -y install gcc
+
+
+
+
+
+tar -zxvf glibc-2.19.tar.gz
+
+修改glibc的源码?
+修改pthread_mutex_lock()？ where-->your dir/glibc-2.19/nptl/pthread_mutex_lock.c---pthread_mutex_lock()
+result：未来任何线程调用pthread_mutex_lock()都会打印msg tid=123456677（tid）
+
+
+ldd -version
+compiler----------------------
+cd glibc-2.19
+mkdir out
+cd out
+../configure --prefix=/usr --disable-profile --enable-add-ons --with-headers=/usr/include --with-binutils=/usr/bin
+make 
+
+ make install
+
+
+真的在做事情 --------不能停止  api
+
+真正阻塞      -------解阻塞   继续
+
+无限循环   --改变循环条件 继续执行
+
+
+
+
+
+
+
+
+
+
+
+https://blog.csdn.net/yunlianglinfeng/article/details/53171191

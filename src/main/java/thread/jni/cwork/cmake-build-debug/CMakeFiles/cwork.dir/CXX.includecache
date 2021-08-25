@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/hgfs/share/workspace/cwork/SimpleThread.cpp
+SimpleThread.h
+/mnt/hgfs/share/workspace/cwork/SimpleThread.h
+pthread.h
+-
+stdio.h
+-
+unistd.h
+-
+
+/mnt/hgfs/share/workspace/cwork/SimpleThread.h
+
